@@ -1,9 +1,21 @@
 'use strict';
 
+//////////////////////////////////
+//// require the enviroment /////
+////////////////////////////////
 require('dotenv').config();
+
+
 const mongoose = require('mongoose');
 const server = require('./src/server.js');
 
+
+////////////////////////////////////////
+// Connecting the app with database////
+/////////     THEN       /////////////
+/////  start accssing the app ///////
+/// Catch the error if its foud ////
+///////////////////////////////////
 mongoose
   .connect(process.env.MONGOOSE_URI,
     { useNewUrlParser: true, useUnifiedTopology: true })

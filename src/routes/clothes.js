@@ -1,18 +1,45 @@
 'use strict';
-
+///////access express/////////////
 const express = require('express');
+
+//////// accssing the model of the class Datamanager from the js file /////////
 const DataManager = require('../models/dataManager.js');
+
+//////// accssing the clothes schema model from the clothes model js file /////////
 const Clothes = require('../models/clothes.js');
 
+
+///////// creating a new object from the class Datamanager 
+////////accessing the clothes schema  model in js file ///
 const dataManager = new DataManager(Clothes);
+
+
 const router = express.Router();
 
+
+///////////////////////////
+//////// ROUTES  /////////
+/////////////////////////
+
+///// route get method for read /////
 router.get('/',getClothes);
 router.get('/:id',getClohesWithId);
+
+///// route post method for create ////   
 router.post('/',createClothes);
+
+////// route put method for update ////
 router.put('/:id',updateClothes);
+
+////// route delete method for delete /////
 router.delete('/:id',deleteClothes);
 
+
+
+//////////////////////////////
+//// middleware functions////
+////////////////////////////
+/////////// CRUD //////////
 async function getClothes (req,res,next){
   try{
     const resObj =await dataManager.read();

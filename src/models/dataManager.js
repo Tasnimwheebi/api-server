@@ -1,4 +1,11 @@
 'use strict';
+
+//////////////////////////////////
+/// Class  with methods read  ///
+/// create , update and      ///
+/// delete to use them in   ///
+/// middleware functions /////
+/////////////////////////////
 class DataManager {
   constructor(model) {
     this.model = model;
