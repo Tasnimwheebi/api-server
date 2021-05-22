@@ -86,3 +86,5 @@ npm test
   
   
 ## **UML**
+
+![uml img](img/4.PNG)
