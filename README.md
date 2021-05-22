@@ -3,13 +3,13 @@
 ## LAB - 04
 ## **Deployment Test**
 ## **Author: Tasnim Wheebi**
-[PR LINK]()
+[PR LINK](https://github.com/Tasnimwheebi/api-server/pull/3)
 
 
 [Heroku APP](https://tasnim-api-server.herokuapp.com)
 
 
-[Report Test]()
+[Report Test](https://github.com/Tasnimwheebi/api-server/actions)
 
 ## **Setup**
 * .env requirements
@@ -22,7 +22,7 @@
 
 **npm start**
 
-    * /api/v1/food : json object
+ * /api/v1/food : json object
    
 
 
