@@ -22,6 +22,6 @@ mongoose
   .then(() => {
     server.start(process.env.PORT);
   })
-  .catch((e) => {
-    console.log('CONNECTION_ERROR', e.mssage);
+  .catch((error) => {
+    console.log('CONNECTION', error.message);
   });
